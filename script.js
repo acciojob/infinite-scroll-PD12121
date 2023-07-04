@@ -10,8 +10,8 @@ function addListItems() {
   const currentCount = list.children.length;
 
   for (let i = 0; i < numItemsToAdd; i++) {
-    const listItem = document.createElement('li');
-    listItem.textContent = `Item ${currentCount + i + 1}`;
+    const ItemList = document.createElement('li');
+    ItemList.textContent = `Item ${currentCount + i + 1}`;
     list.appendChild(listItem);
   }
 }
