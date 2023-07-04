@@ -1,13 +1,17 @@
 
 const list = document.getElementById('infi-list');
 
+
 function addListItems() {
- 
+
   const numItemsToAdd = 2;
 
+
+  const currentCount = list.children.length;
+
   for (let i = 0; i < numItemsToAdd; i++) {
-    const itemList = document.createElement('li');
-    itemList.textContent = 'List Item ', i+1 ;
+    const listItem = document.createElement('li');
+    listItem.textContent = `List Item ${currentCount + i + 1}`;
     list.appendChild(listItem);
   }
 }
@@ -26,8 +30,9 @@ function checkEndOfList() {
 
 for (let i = 0; i < 10; i++) {
   const listItem = document.createElement('li');
-  listItem.textContent = 'List Item';
+  listItem.textContent =  `Item ${i + 1}`;
   list.appendChild(listItem);
 }
+
 
 list.addEventListener('scroll', checkEndOfList);
