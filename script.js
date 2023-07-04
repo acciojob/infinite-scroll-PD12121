@@ -11,7 +11,7 @@ function addListItems() {
 
   for (let i = 0; i < numItemsToAdd; i++) {
     const listItem = document.createElement('li');
-    listItem.textContent = `List Item ${currentCount + i + 1}`;
+    listItem.textContent = `Item ${currentCount + i + 1}`;
     list.appendChild(listItem);
   }
 }
